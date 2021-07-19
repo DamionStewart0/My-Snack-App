@@ -43,6 +43,7 @@ const User = new Schema(
 
 - Deployed full-crud backend && frontend
 - Landing page w/ Carousel and About section
+- Dashboard
 - Product list page
 - Functional search and sort
 - Product detail page
