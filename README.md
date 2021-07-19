@@ -44,11 +44,13 @@ const User = new Schema(
 ## MVP
 
 - Deployed full-crud backend && frontend
-- Landing page w/ Carousel and About section
+- Landing page (Choose country of origin)
 - Dashboard
 - Product list page
 - Functional search and sort
 - Product detail page
+- Checkout page
+- Order Page
 - Authentication && authorization
 - Display different routes for general users vs. authenticated users
 
