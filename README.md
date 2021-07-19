@@ -4,6 +4,8 @@
 
 This full stack Mern application allows users to browse a variety of snacks that are available in Common Wealth Caribbean countries. General users will be able to purchase snack and have their products delivered, while the authenticated user(admin) will have have additional capabilities to create, update and destroy listings. The goalof this web app is to be minimal.
 
+### Whimiscal wireframe
+https://whimsical.com/my-snack-app-52KYWjCxr6ZXMQjyjRfFnm
 
 
 ## Schema
