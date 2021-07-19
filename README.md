@@ -2,6 +2,59 @@
 
 ## Overview
 
-This full stack MERN application allows users to browse a list of private islands for purchasing. General users will have the ability to browse and select islands, while authenticated users can create, update, and delete their products from the inventory. The goal of the site design is to be minimal, letting the images drive the page.
+This full stack Mern application allows users to browse a variety of snacks that are available in Common Wealth Caribbean countries. General users will be able to purchase snack and have their products delivered, while the authenticated user(admin) will have have additional capabilities to create, update and destroy listings. The goalof this web app is to be minimal.
 
-This full stack Mern application allows users to browse a variety of snacks that are available in Common Wealth Caribbean countries. Users will be able to purchase snack and have their products delivered.
+
+
+## Schema
+
+##### Product
+
+```
+const Listing = new Schema(
+  {
+    name: { type: String, required: true },
+    imgURL: { type: String, required: true },
+    description: { type: String, required: true },
+    price: { type: Number, required: true },
+    location: {type: String, required: true},
+    userId: { type: Schema.Types.ObjectId, ref: "users" },
+  },
+  { timestamps: true }
+)
+```
+
+##### User
+
+```
+const User = new Schema(
+  {
+    username: { type: String, required: true },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true },
+    listings: [{ type: Schema.Types.ObjectId, ref: "listings" }],
+  },
+  { timestamps: true }
+);
+```
+
+
+## MVP
+
+- Deployed full-crud backend && frontend
+- Landing page w/ Carousel and About section
+- Product list page
+- Functional search and sort
+- Product detail page
+- Authentication && authorization
+- Display different routes for general users vs. authenticated users
+
+## Post MVP
+
+- Add video content to carousel
+- Animating content on page scroll
+- More detailed authentication
+- Experiment with pop-ups, modals, and adding branding
+- Refactor nav to be a two-part component
+- UseContext for user
+- Experiment with mapbox api
