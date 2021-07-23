@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema; // class
 
-const Products = new Schema(
+const Product = new Schema(
     {
         name: { type: String, required: true},
         imgURL: { type: String, required: true},
